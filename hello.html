@@ -1,27 +1,625 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Worlda</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            font-family: 'Arial', sans-serif;
+    <title>My Canopy - Jasa Pasang Kanopi Baja Ringan Murah & Berkualitas</title>
+    <meta name="description" content="Jasa pemasangan kanopi baja ringan dan kanopi besi hollow. Harga kompetitif, survey gratis, garansi 3 bulan.">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        }
+                    }
+                }
+            }
         }
-        h1 {
-            color: white;
-            font-size: 4em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1c1917 0%, #292524 50%, #44403c 100%);
+        }
+        .text-shadow {
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
         }
     </style>
 </head>
-<body>
-    <h1>Hello World</h1>
+<body class="font-sans bg-stone-50 text-stone-800">
+
+<!-- Navbar -->
+<nav class="fixed top-0 w-full bg-white/95 backdrop-blur shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-9 h-9 bg-brand-600 rounded-lg flex items-center justify-center">
+                    <i class="fa-solid fa-house-chimney text-white"></i>
+                </div>
+                <span class="font-extrabold text-lg text-stone-900">My Canopy</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
+                <a href="#keunggulan" class="hover:text-brand-600 transition">Keunggulan</a>
+                <a href="#harga" class="hover:text-brand-600 transition">Harga</a>
+                <a href="#galeri" class="hover:text-brand-600 transition">Galeri</a>
+                <a href="#kontak" class="hover:text-brand-600 transition">Kontak</a>
+            </div>
+            <a href="https://wa.link/zwzjlc" class="bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="hidden sm:inline">WhatsApp</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="gradient-bg pt-28 pb-20 md:pt-36 md:pb-28 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.03%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                    <span class="inline-block bg-brand-600/20 text-brand-500 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
+                        ✦ Jasa Pemasangan Profesional
+                    </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight text-shadow">
+                    Kanopi Baja Ringan <span class="text-brand-500">Murah</span> & Berkualitas
+                </h1>
+                <p class="mt-6 text-lg text-stone-300 leading-relaxed">
+                    Spesialis kanopi baja ringan, besi hollow, alderon, dan minimalis modern untuk rumah, kantor, & bangunan komersial. Survey gratis di seluruh Indonesia.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                    <a href="https://wa.link/zwzjlc" class="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-green-500/30 transition">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Chat WhatsApp Sekarang
+                    </a>
+                    <a href="#harga" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-3.5 rounded-xl transition">
+                        Lihat Daftar Harga
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="mt-10 flex items-center gap-6 text-stone-300 text-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-brand-500"></i>
+                        Survey Gratis
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-brand-500"></i>
+                        Garansi 3 Bulan
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-brand-500"></i>
+                        Tim Ahli
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-brand-500/20 blur-3xl rounded-full"></div>
+                <div class="relative bg-gradient-to-br from-stone-700 to-stone-900 rounded-3xl p-8 shadow-2xl border border-white/10">
+                    <div class="aspect-square bg-stone-800 rounded-2xl flex items-center justify-center overflow-hidden">
+                        <img src="images/hero.jpg" alt="Kanopi Baja Ringan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-brand-600 text-white px-5 py-3 rounded-2xl shadow-lg">
+                        <div class="text-2xl font-extrabold">10+</div>
+                        <div class="text-xs">Tahun Pengalaman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Keunggulan -->
+<section id="keunggulan" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-brand-600 font-semibold text-sm uppercase tracking-widest">Keunggulan Kami</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-stone-900">Kekuatan & Kenyamanan untuk Hunian Anda</h2>
+            <p class="mt-4 text-stone-600">Didukung tim ahli berpengalaman, spesialis jasa pasang kanopi baja ringan dan besi hollow.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-6 border border-stone-200 hover:border-brand-500 hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-screwdriver-wrench text-brand-600 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-stone-900">Ahli Pemasangan</h3>
+                <p class="mt-2 text-stone-600 text-sm">Spesialis kanopi baja ringan dan kanopi besi hollow dengan pengalaman bertahun-tahun.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 border border-stone-200 hover:border-brand-500 hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-bolt text-brand-600 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-stone-900">Instalasi Cepat</h3>
+                <p class="mt-2 text-stone-600 text-sm">Proses instalasi cepat, harga pantas, dan survey gratis untuk seluruh klien.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 border border-stone-200 hover:border-brand-500 hover:shadow-xl transition">
+                <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-house-chimney text-brand-600 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-stone-900">Spesialis Modern</h3>
+                <p class="mt-2 text-stone-600 text-sm">Kanopi alderon dan minimalis modern terbaru untuk rumah, kantor, dan bangunan komersial.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Masalah Section -->
+<section class="py-20 bg-stone-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-red-600 font-semibold text-sm uppercase tracking-widest">⚠ Awas Jangan Salah Pilih</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-stone-900">Masalah yang Sering Menghantui Anda</h2>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-white rounded-xl p-5 flex gap-4 items-start border-l-4 border-red-500">
+                <i class="fa-solid fa-circle-xmark text-red-500 text-xl mt-1"></i>
+                <p class="text-stone-700">Developer menawarkan harga murah, tapi kualitas belum tentu bagus?</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 flex gap-4 items-start border-l-4 border-red-500">
+                <i class="fa-solid fa-circle-xmark text-red-500 text-xl mt-1"></i>
+                <p class="text-stone-700">Harga sudah disetujui ternyata masih banyak biaya tambahan yang tidak jelas?</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 flex gap-4 items-start border-l-4 border-red-500">
+                <i class="fa-solid fa-circle-xmark text-red-500 text-xl mt-1"></i>
+                <p class="text-stone-700">Pengerjaan ngaret karena developer "palugada" (apa lu mau, gue ada), bukan spesialis kanopi?</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 flex gap-4 items-start border-l-4 border-red-500">
+                <i class="fa-solid fa-circle-xmark text-red-500 text-xl mt-1"></i>
+                <p class="text-stone-700">Tidak cepat tanggap untuk survey, pemasangan terkatung-katung tanpa kejelasan?</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 flex gap-4 items-start border-l-4 border-red-500">
+                <i class="fa-solid fa-circle-xmark text-red-500 text-xl mt-1"></i>
+                <p class="text-stone-700">Putus hubungan setelah pemasangan tanpa garansi, bikin was-was ke depannya?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-brand-600 font-semibold text-sm uppercase tracking-widest">Mengapa Kami</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-stone-900">Kenapa Harus Memilih Kami?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-stone-50 to-white rounded-2xl p-7 border border-stone-200 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-tag text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-xl text-stone-900">Harga Kompetitif</h3>
+                <p class="mt-3 text-stone-600">Harga pantas, bukan murahan. Sesuai dengan kualitas pengerjaan dan kepuasan konsumen sebagai komitmen kami.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-stone-50 to-white rounded-2xl p-7 border border-stone-200 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-users-gear text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-xl text-stone-900">Tim Berpengalaman</h3>
+                <p class="mt-3 text-stone-600">Tim profesional yang fokus pada pemasangan kanopi baja ringan dan besi hollow selama bertahun-tahun.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-stone-50 to-white rounded-2xl p-7 border border-stone-200 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-pen-ruler text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-xl text-stone-900">Desain & Kualitas</h3>
+                <p class="mt-3 text-stone-600">Perencanaan desain matang agar pengerjaan tepat waktu. Solusi cepat untuk setiap tantangan.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-stone-50 to-white rounded-2xl p-7 border border-stone-200 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-headset text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-xl text-stone-900">Survey & Konsultasi Gratis</h3>
+                <p class="mt-3 text-stone-600">Butuh konsultasi tentang kanopi alderon, baja ringan, atau besi hollow? Klik WhatsApp, gratis!</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-stone-50 to-white rounded-2xl p-7 border border-stone-200 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-shield-halved text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-xl text-stone-900">Garansi 3 Bulan</h3>
+                <p class="mt-3 text-stone-600">Tersedia garansi selama 3 bulan setelah pemasangan, agar Anda nyaman dengan hasil pengerjaan.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-stone-50 to-white rounded-2xl p-7 border border-stone-200 hover:shadow-xl transition group">
+                <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-house-medical text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-xl text-stone-900">Protokol Kesehatan</h3>
+                <p class="mt-3 text-stone-600">Tim survey kami menerapkan protokol kesehatan saat home service ke tempat klien.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Daftar Harga -->
+<section id="harga" class="py-20 bg-stone-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-brand-500 font-semibold text-sm uppercase tracking-widest">Daftar Harga</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold">Harga Kanopi Per Meter</h2>
+            <p class="mt-4 text-stone-400">Harga transparan, sesuai kualitas. Berikut daftar harga lengkapnya:</p>
+        </div>
+
+        <div class="bg-stone-800 rounded-2xl overflow-hidden border border-stone-700">
+            <div class="divide-y divide-stone-700">
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Baja ringan atap spandek polos</span>
+                    <span class="font-bold text-brand-500">Rp 300.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Baja ringan atap spandek pasir</span>
+                    <span class="font-bold text-brand-500">Rp 375.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Baja ringan atap alderon single layer</span>
+                    <span class="font-bold text-brand-500">Rp 400.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Baja ringan atap alderon double layer</span>
+                    <span class="font-bold text-brand-500">Rp 500.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Besi hollow atap spandek polos</span>
+                    <span class="font-bold text-brand-500">Rp 350.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Besi hollow atap spandek pasir</span>
+                    <span class="font-bold text-brand-500">Rp 425.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Besi hollow atap alderon single layer</span>
+                    <span class="font-bold text-brand-500">Rp 450.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Besi hollow atap alderon double layer</span>
+                    <span class="font-bold text-brand-500">Rp 600.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Besi hollow atap solarflat 1.2 mm</span>
+                    <span class="font-bold text-brand-500">Rp 700.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Besi hollow atap solarflat 3 mm</span>
+                    <span class="font-bold text-brand-500">Rp 1.000.000/m²</span>
+                </div>
+                <div class="flex justify-between items-center px-6 py-4 hover:bg-stone-700/50 transition">
+                    <span class="text-stone-200">Besi hollow atap kaca tempered</span>
+                    <span class="font-bold text-brand-500">Rp 1.200.000/m²</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <a href="https://wa.link/zwzjlc" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-green-500/30 transition">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                Tanya Harga Sekarang
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Produk -->
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-brand-600 font-semibold text-sm uppercase tracking-widest">Produk Kami</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-stone-900">Jenis Atap yang Kami Sediakan</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition group">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/produk-spandek.jpg" alt="Atap Spandek" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-4 flex items-center gap-2">
+                    <i class="fa-solid fa-grip-lines text-brand-600"></i>
+                    <h4 class="font-semibold text-stone-800 text-sm">Atap Spandek</h4>
+                </div>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition group">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/produk-alderon-single.jpg" alt="Alderon Single Layer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-4 flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-brand-600"></i>
+                    <h4 class="font-semibold text-stone-800 text-sm">Alderon Single</h4>
+                </div>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition group">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/produk-kaca.jpg" alt="Atap Kaca" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-4 flex items-center gap-2">
+                    <i class="fa-solid fa-window-maximize text-brand-600"></i>
+                    <h4 class="font-semibold text-stone-800 text-sm">Atap Kaca</h4>
+                </div>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition group">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/produk-solartuff.jpg" alt="SolarTuff" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-4 flex items-center gap-2">
+                    <i class="fa-solid fa-sun text-brand-600"></i>
+                    <h4 class="font-semibold text-stone-800 text-sm">Atap SolarTuff</h4>
+                </div>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition group">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/produk-alderon-double.jpg" alt="Alderon Double Layer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-4 flex items-center gap-2">
+                    <i class="fa-solid fa-clone text-brand-600"></i>
+                    <h4 class="font-semibold text-stone-800 text-sm">Alderon Double</h4>
+                </div>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition group">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/produk-polycarbonate.jpg" alt="Polycarbonate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-4 flex items-center gap-2">
+                    <i class="fa-solid fa-square text-brand-600"></i>
+                    <h4 class="font-semibold text-stone-800 text-sm">Polycarbonate</h4>
+                </div>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition group">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/produk-spandek-pasir.jpg" alt="Spandek Pasir" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-4 flex items-center gap-2">
+                    <i class="fa-solid fa-mound text-brand-600"></i>
+                    <h4 class="font-semibold text-stone-800 text-sm">Spandek Pasir</h4>
+                </div>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition group">
+                <div class="aspect-[4/3] overflow-hidden">
+                    <img src="images/produk-solarflat.jpg" alt="Solarflat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-4 flex items-center gap-2">
+                    <i class="fa-solid fa-solar-panel text-brand-600"></i>
+                    <h4 class="font-semibold text-stone-800 text-sm">Atap Solarflat</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Galeri -->
+<section id="galeri" class="py-20 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-brand-600 font-semibold text-sm uppercase tracking-widest">Portfolio</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-stone-900">Galeri Pekerjaan Kami</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="images/galeri-1.jpg" alt="Galeri 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="images/galeri-2.jpg" alt="Galeri 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="images/galeri-3.jpg" alt="Galeri 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="images/galeri-4.jpg" alt="Galeri 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="images/galeri-5.jpg" alt="Galeri 5" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="images/galeri-6.jpg" alt="Galeri 6" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="images/galeri-7.jpg" alt="Galeri 7" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="images/galeri-8.jpg" alt="Galeri 8" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Proses Kerja -->
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+            <span class="text-brand-600 font-semibold text-sm uppercase tracking-widest">Proses Kerja</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-stone-900">Bagaimana Kami Bekerja?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="relative">
+                <div class="absolute -top-3 -left-2 text-7xl font-extrabold text-stone-100 select-none">01</div>
+                <div class="relative bg-white rounded-2xl p-6 border border-stone-200">
+                    <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-4 text-white">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Konsultasikan</h3>
+                    <p class="mt-2 text-sm text-stone-600">Diskusikan kebutuhan pemasangan kanopi via telepon, email, atau WhatsApp.</p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -top-3 -left-2 text-7xl font-extrabold text-stone-100 select-none">02</div>
+                <div class="relative bg-white rounded-2xl p-6 border border-stone-200">
+                    <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-4 text-white">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Rekomendasi</h3>
+                    <p class="mt-2 text-sm text-stone-600">Tim kami memberikan rekomendasi desain sesuai budget dan preferensi Anda.</p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -top-3 -left-2 text-7xl font-extrabold text-stone-100 select-none">03</div>
+                <div class="relative bg-white rounded-2xl p-6 border border-stone-200">
+                    <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-4 text-white">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Persiapan</h3>
+                    <p class="mt-2 text-sm text-stone-600">Persiapan material dan estimasi durasi pengerjaan kami informasikan ke Anda.</p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -top-3 -left-2 text-7xl font-extrabold text-stone-100 select-none">04</div>
+                <div class="relative bg-white rounded-2xl p-6 border border-stone-200">
+                    <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-4 text-white">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-stone-900">Instalasi</h3>
+                    <p class="mt-2 text-sm text-stone-600">Pemasangan kanopi oleh tim ahli berpengalaman di tempat Anda.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial -->
+<section class="py-20 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+            <span class="text-brand-600 font-semibold text-sm uppercase tracking-widest">Testimonial</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-stone-900">Apa Kata Pelanggan Kami?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                <div class="flex text-yellow-400 mb-3">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-stone-700 italic">"Pemasangan kanopi alderon di rumah saya sangat rapi. Tim datang tepat waktu dan hasilnya memuaskan. Recommended!"</p>
+                <div class="mt-4 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">B</div>
+                    <div>
+                        <div class="font-semibold text-stone-900">Pak Budi</div>
+                        <div class="text-xs text-stone-500">Jakarta Selatan</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                <div class="flex text-yellow-400 mb-3">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-stone-700 italic">"Harga sesuai dengan kualitas. Survey gratis, garansi pasti. Saya sangat puas dengan hasilnya. Pasti akan rekomendasikan ke teman."</p>
+                <div class="mt-4 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">S</div>
+                    <div>
+                        <div class="font-semibold text-stone-900">Bu Sari</div>
+                        <div class="text-xs text-stone-500">Tangerang</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                <div class="flex text-yellow-400 mb-3">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-stone-700 italic">"Sudah 3 kali pakai jasa My Canopy untuk proyek kantor. Selalu profesional dan tepat waktu. Top markotop!"</p>
+                <div class="mt-4 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold">A</div>
+                    <div>
+                        <div class="font-semibold text-stone-900">Pak Andre</div>
+                        <div class="text-xs text-stone-500">Bekasi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact / CTA -->
+<section id="kontak" class="py-20 gradient-bg relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="text-center mb-12">
+            <span class="text-brand-500 font-semibold text-sm uppercase tracking-widest">Hubungi Kami</span>
+            <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-white">Siap untuk Memulai Proyek Anda?</h2>
+            <p class="mt-4 text-stone-300 max-w-2xl mx-auto">Tim kami akan menghubungi dalam 24 jam untuk mendiskusikan kebutuhan, ide, atau visi proyek kanopi Anda.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center">
+                <div class="w-14 h-14 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-white">WhatsApp</h4>
+                <a href="https://wa.link/zwzjlc" class="mt-2 text-stone-300 text-sm hover:text-brand-500 block">Chat Sekarang</a>
+            </div>
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center">
+                <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-envelope text-white text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-white">Email</h4>
+                <a href="mailto:Ady20purnomo@gmail.com" class="mt-2 text-stone-300 text-sm hover:text-brand-500 block break-all">Ady20purnomo@gmail.com</a>
+            </div>
+            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center">
+                <div class="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-location-dot text-white text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-white">Alamat</h4>
+                <p class="mt-2 text-stone-300 text-xs">Jl. Arteri Permata Hijau No.22, Grogol Utara, Kby. Lama, Jakarta Selatan</p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="https://wa.link/zwzjlc" class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-xl shadow-2xl shadow-green-500/40 transition text-lg">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                Chat WhatsApp Sekarang
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-stone-950 text-stone-400 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
+                    <i class="fa-solid fa-house-chimney text-white text-sm"></i>
+                </div>
+                <span class="font-extrabold text-white">My Canopy</span>
+            </div>
+            <p class="text-sm">© 2026 mycanopy.site - Jasa Pemasangan Kanopi Baja Ringan & Besi Hollow</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.link/zwzjlc" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl shadow-green-500/40 flex items-center justify-center transition z-40 hover:scale-110">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+</a>
+
 </body>
 </html>
